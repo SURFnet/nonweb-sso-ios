@@ -57,7 +57,7 @@ NSString * const _Nonnull SSOServiceErrorDomain = @"SSOServiceErrorDomain";
     UIViewController *authorizationViewController = [SSOService sharedInstance].authorizationViewController;
     id <SSOAuthorizationViewControllerDelegate> previousDelegate = [SSOService sharedInstance].delegate;
     if (authorizationViewController != nil) {
-        NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthenticationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authentication was cancelled.", @"Message shown when a second authorization view controller is created")}];
+        NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthorizationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authorization was cancelled.", @"Message shown when a second authorization view controller is created")}];
         [previousDelegate dismissAuthorizationViewController:authorizationViewController animated:YES completion:^{
             [previousDelegate authorizationViewController:authorizationViewController didFailWithError:error];
         }];
@@ -65,14 +65,14 @@ NSString * const _Nonnull SSOServiceErrorDomain = @"SSOServiceErrorDomain";
 
     [SSOService sharedInstance].delegate = delegate;
 
-    NSURL *authenticationURL = [self URLForEndpoint:endpoint consumerId:consumerId state:state];
+    NSURL *authorizationURL = [self URLForEndpoint:endpoint consumerId:consumerId state:state];
     if ([SFSafariViewController class]) {
-        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:authenticationURL];
+        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:authorizationURL];
         safariViewController.delegate = [self sharedInstance];
         [SSOService sharedInstance].authorizationViewController = safariViewController;
         return safariViewController;
     } else {
-        SSOWebViewController *webViewController = [[SSOWebViewController alloc] initWithURL:authenticationURL];
+        SSOWebViewController *webViewController = [[SSOWebViewController alloc] initWithURL:authorizationURL];
         webViewController.delegate = [self sharedInstance];
         [SSOService sharedInstance].authorizationViewController = webViewController;
         UINavigationController *webNavigationController = [[UINavigationController alloc] initWithRootViewController:webViewController];
@@ -99,7 +99,7 @@ NSString * const _Nonnull SSOServiceErrorDomain = @"SSOServiceErrorDomain";
                 [delegate authorizationViewController:authorizationViewController didSucceedWithToken:token];
             }];
         } else {
-            NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthenticationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authentication was cancelled.", @"Message shown when callback url has no access token")}];
+            NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthorizationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authorization was cancelled.", @"Message shown when callback url has no access token")}];
             [delegate dismissAuthorizationViewController:authorizationViewController animated:YES completion:^{
                 [delegate authorizationViewController:authorizationViewController didFailWithError:error];
             }];
@@ -114,7 +114,7 @@ NSString * const _Nonnull SSOServiceErrorDomain = @"SSOServiceErrorDomain";
     id <SSOAuthorizationViewControllerDelegate> delegate = [SSOService sharedInstance].delegate;
     if (authorizationViewController != nil) {
         // Don't call dismissAuthorizationViewController, as SFSafariViewController dismisses itself
-        NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthenticationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authentication was cancelled.", @"Message shown when the user taps Done")}];
+        NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthorizationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authorization was cancelled.", @"Message shown when the user taps Done")}];
         [delegate authorizationViewController:authorizationViewController didFailWithError:error];
     }
 }
@@ -123,7 +123,7 @@ NSString * const _Nonnull SSOServiceErrorDomain = @"SSOServiceErrorDomain";
     UIViewController *authorizationViewController = [SSOService sharedInstance].authorizationViewController;
     id <SSOAuthorizationViewControllerDelegate> delegate = [SSOService sharedInstance].delegate;
     if (authorizationViewController != nil) {
-        NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthenticationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authentication was cancelled.", @"Message shown when the user taps Done")}];
+        NSError *error = [NSError errorWithDomain:SSOServiceErrorDomain code:SSOServiceErrorAuthorizationCancelled userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"The authorization was cancelled.", @"Message shown when the user taps Done")}];
         [delegate dismissAuthorizationViewController:authorizationViewController animated:YES completion:^{
             [delegate authorizationViewController:authorizationViewController didFailWithError:error];
         }];

@@ -58,8 +58,8 @@
 		C70B092F1BEB2E760027BA82 /* SSOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSOWebViewController.m; sourceTree = "<group>"; };
 		C70B09321BEC9A6B0027BA82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7145A361BE8A0CA009B3E43 /* libSSOService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSOService.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7145A391BE8A0CA009B3E43 /* SSOService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSOService.h; sourceTree = "<group>"; };
-		C7145A3B1BE8A0CA009B3E43 /* SSOService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSOService.m; sourceTree = "<group>"; };
+		C7145A391BE8A0CA009B3E43 /* SSOService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SSOService.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C7145A3B1BE8A0CA009B3E43 /* SSOService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SSOService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C7145A461BE8A7F3009B3E43 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7145A481BE8A7F3009B3E43 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		C7145A4A1BE8A7F3009B3E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };

@@ -22,8 +22,8 @@ extern NSString * const _Nonnull SSOServiceErrorDomain;
 
 typedef enum : NSUInteger {
     SSOServiceErrorUnknown = 0,
-    SSOServiceErrorAuthenticationCancelled = 1,
-    SSOServiceErrorAuthenticationFailed = 2,
+    SSOServiceErrorAuthorizationCancelled = 1,
+    SSOServiceErrorAuthorizationFailed = 2,
 } SSOServiceError;
 
 @protocol SSOAuthorizationViewControllerDelegate <NSObject>
