@@ -57,6 +57,7 @@
 		C70B092E1BEB2E760027BA82 /* SSOWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSOWebViewController.h; sourceTree = "<group>"; };
 		C70B092F1BEB2E760027BA82 /* SSOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSOWebViewController.m; sourceTree = "<group>"; };
 		C70B09321BEC9A6B0027BA82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C71041821BF09D0E00CF1A75 /* SSOService-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = "SSOService-iOS.podspec"; sourceTree = "<group>"; };
 		C7145A361BE8A0CA009B3E43 /* libSSOService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSOService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7145A391BE8A0CA009B3E43 /* SSOService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SSOService.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C7145A3B1BE8A0CA009B3E43 /* SSOService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SSOService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -115,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				C70B09321BEC9A6B0027BA82 /* README.md */,
+				C71041821BF09D0E00CF1A75 /* SSOService-iOS.podspec */,
 				C7145A381BE8A0CA009B3E43 /* SSOService */,
 				C7145A471BE8A7F3009B3E43 /* Tests */,
 				C70B09311BEC98940027BA82 /* Frameworks */,
