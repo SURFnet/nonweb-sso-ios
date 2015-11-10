@@ -37,16 +37,6 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    UIViewController *aViewController = [[UIViewController alloc] init];
-
-    UIViewController *authorizationViewController = [SSOService authorizationViewControllerForConsumerId:@"consumer id" endpoint:@"endpoint" completionHandler:^(NSString *token, NSError *error) {
-        if (token) {
-            // Success
-        } else if (error) {
-            // Failure
-        }
-    }];
-    [aViewController presentViewController:authorizationViewController animated:YES completion:nil];
 }
 
 - (void)testPerformanceExample {
