@@ -64,7 +64,7 @@
 		C7145A461BE8A7F3009B3E43 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7145A481BE8A7F3009B3E43 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		C7145A4A1BE8A7F3009B3E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7145AA01BE9F9D4009B3E43 /* Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7145AA01BE9F9D4009B3E43 /* Sample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7145AA31BE9F9D4009B3E43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7145AA51BE9F9D4009B3E43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7145AA61BE9F9D4009B3E43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				C7145A381BE8A0CA009B3E43 /* SSOService */,
 				C7145A471BE8A7F3009B3E43 /* Tests */,
 				C70B09311BEC98940027BA82 /* Frameworks */,
-				C7145AA11BE9F9D4009B3E43 /* Demo-iOS */,
+				C7145AA11BE9F9D4009B3E43 /* Sample-iOS */,
 				C7145A371BE8A0CA009B3E43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 			children = (
 				C7145A361BE8A0CA009B3E43 /* libSSOService.a */,
 				C7145A461BE8A7F3009B3E43 /* Tests.xctest */,
-				C7145AA01BE9F9D4009B3E43 /* Demo-iOS.app */,
+				C7145AA01BE9F9D4009B3E43 /* Sample-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		C7145AA11BE9F9D4009B3E43 /* Demo-iOS */ = {
+		C7145AA11BE9F9D4009B3E43 /* Sample-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				C7145AA51BE9F9D4009B3E43 /* AppDelegate.h */,
@@ -168,7 +168,7 @@
 				C7145AB31BE9F9D4009B3E43 /* Info.plist */,
 				C7145AA21BE9F9D4009B3E43 /* Supporting Files */,
 			);
-			path = "Demo-iOS";
+			path = "Sample-iOS";
 			sourceTree = "<group>";
 		};
 		C7145AA21BE9F9D4009B3E43 /* Supporting Files */ = {
@@ -217,9 +217,9 @@
 			productReference = C7145A461BE8A7F3009B3E43 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C7145A9F1BE9F9D4009B3E43 /* Demo-iOS */ = {
+		C7145A9F1BE9F9D4009B3E43 /* Sample-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7145ACA1BE9F9D4009B3E43 /* Build configuration list for PBXNativeTarget "Demo-iOS" */;
+			buildConfigurationList = C7145ACA1BE9F9D4009B3E43 /* Build configuration list for PBXNativeTarget "Sample-iOS" */;
 			buildPhases = (
 				C7145A9C1BE9F9D4009B3E43 /* Sources */,
 				C7145A9D1BE9F9D4009B3E43 /* Frameworks */,
@@ -230,9 +230,9 @@
 			dependencies = (
 				C70B092B1BEB0AB00027BA82 /* PBXTargetDependency */,
 			);
-			name = "Demo-iOS";
+			name = "Sample-iOS";
 			productName = SSOServiceDemo;
-			productReference = C7145AA01BE9F9D4009B3E43 /* Demo-iOS.app */;
+			productReference = C7145AA01BE9F9D4009B3E43 /* Sample-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -270,7 +270,7 @@
 			targets = (
 				C7145A351BE8A0C9009B3E43 /* SSOService */,
 				C7145A451BE8A7F3009B3E43 /* Tests */,
-				C7145A9F1BE9F9D4009B3E43 /* Demo-iOS */,
+				C7145A9F1BE9F9D4009B3E43 /* Sample-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -480,10 +480,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sample-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nl.surfnet.SSOServiceDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.surfnet.SSOServiceSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -493,10 +493,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sample-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nl.surfnet.SSOServiceDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.surfnet.SSOServiceSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7145ACA1BE9F9D4009B3E43 /* Build configuration list for PBXNativeTarget "Demo-iOS" */ = {
+		C7145ACA1BE9F9D4009B3E43 /* Build configuration list for PBXNativeTarget "Sample-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7145ACB1BE9F9D4009B3E43 /* Debug */,

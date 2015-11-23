@@ -3,7 +3,7 @@ SURFnet iOS SSO Library
 
 Now you can easily integrate the [SURFnet](https://www.surf.nl) SSO process flow in your iOS application by using this library.
 
-If you want to see it in action, check out the demo app in this repository.
+If you want to see it in action, check out the sample app in this repository.
 
 
 HOW TO USE THE LIBRARY
