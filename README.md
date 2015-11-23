@@ -11,7 +11,7 @@ HOW TO USE THE LIBRARY
 
 Before you can use the library you need to have your `consumerId` registered by SURFnet and have received your `consumer secret`.
 
-### Include library
+### 1. Include library
 
 If you are using CocoaPods, add the following line to your Podfile:
 
@@ -19,11 +19,11 @@ If you are using CocoaPods, add the following line to your Podfile:
 
 alternatively, add the code from the SSOService folder into your project directly.
 
-### Register URL scheme
+### 2. Register URL scheme
 
 In the Info.plist of your app, add an entry in CFBundleURLTypes with the value for CFBundleURLSchemes set to the one registered with Surfnet.
 
-### Showing authorization screen
+### 3. Showing authorization screen
 
 When you want to let the user login, create an authorization view controller and display it.
 
@@ -54,7 +54,7 @@ You should also implement a few delegate callback methods.
         [self presentViewController:errorAlert animated:YES completion:nil];
     }
 
-### Receiving access token
+### 4. Receiving access token
 
 The access token will be delivered to your app via a callback URL. In your application delegate, implement the method to handle the URL.
 
